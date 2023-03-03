@@ -21,6 +21,7 @@ const items = galleryItems.map(item => {
 gallery.innerHTML = items;
 
 gallery.addEventListener('click', onImgClick);
+ 
 
 function onImgClick(event) {
     event.preventDefault();
@@ -31,5 +32,6 @@ function onImgClick(event) {
     height="850">
 `)
 
-instance.show()
+    instance.show()
+    
 }
