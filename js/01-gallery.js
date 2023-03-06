@@ -23,6 +23,7 @@ gallery.innerHTML = items;
 gallery.addEventListener('click', onImgClick);
 
 
+
 function onImgClick(event) {
     event.preventDefault();
 
@@ -37,6 +38,8 @@ function onImgClick(event) {
             },
             onClose: (instance) => {
                 document.removeEventListener('keydown',onEscapePress)
+                document.removeEventListener('click', onImgClick)
+                 
             }
         }
     )
