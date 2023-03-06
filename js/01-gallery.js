@@ -37,9 +37,7 @@ function onImgClick(event) {
                 document.addEventListener('keydown', onEscapePress);
             },
             onClose: (instance) => {
-                document.removeEventListener('keydown',onEscapePress)
-                document.removeEventListener('click', onImgClick)
-                 
+                document.removeEventListener('keydown',onEscapePress)    
             }
         }
     )
